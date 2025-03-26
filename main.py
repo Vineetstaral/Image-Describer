@@ -90,7 +90,7 @@ if uploaded_image:
     resized_image.save(image_path)
 
     # Display the uploaded image
-    st.image(resized_image, caption="Uploaded Image (Resized)", use_column_width=True)
+    st.image(resized_image, caption="Uploaded Image (Resized)", use_container_width=True)
 
     # Encode the image to base64
     base64_image = encode_image(image_path)
